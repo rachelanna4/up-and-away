@@ -9,7 +9,7 @@ import { useState } from "react";
 function App() {
   const wordGenerator = "MITTENS";
   const [word] = useState(wordGenerator);
-  const chosenLetters = ["t"];
+  const chosenLetters = [];
   const [letters, setLetters] = useState(chosenLetters);
 
   return (
