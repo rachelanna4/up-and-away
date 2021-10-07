@@ -12,17 +12,12 @@ function App() {
   const chosenLetters = ["t"];
   const [letters, setLetters] = useState(chosenLetters);
 
-  const checkLetter = (letter) => {
-    const newLetterList = [...letters, letter];
-    setLetters(newLetterList);
-  };
-
   return (
     <div className="App">
       <Header />
       <GameImage />
-      <Keyboard currLetters={letters} checkLetter={checkLetter} />
-      <GameStatus />
+      <Keyboard currLetters={letters} setLetters={setLetters} />
+      <GameStatus word={word} currLetters={letters} />
       <WordDisplay word={word} letters={letters} />
     </div>
   );
