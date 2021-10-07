@@ -12,6 +12,13 @@ const formatLives = (lives) => {
     return livesText;
 }
 
+const hasWon = (word, currLetters) => {
+    if (word.split("").every(letter => currLetters.includes(letter))) {
+        return true
+    }
+    return false
+}
+
 
 const GameStatus = ({word, currLetters}) => {
 
@@ -23,7 +30,11 @@ const GameStatus = ({word, currLetters}) => {
 
     lives -= wrongLetters.length
 
-   
+   if (hasWon(word, currLetters)) {
+       return (
+           <h3>You have won and pigs CAN fly!</h3>
+       )
+   }
 
     return (
         <h3>{formatLives(lives)}</h3>
