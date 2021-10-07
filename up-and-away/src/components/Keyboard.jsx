@@ -11,7 +11,7 @@ const Keyboard = ({currLetters, setLetters}) => {
     return (
         <section>
         {alphabet.map(letter => {
-            return <button key={letter} onClick={() => addLetter(letter) }>{letter}</button>
+            return <button key={letter} onClick={() => addLetter(letter)} disabled={currLetters.includes(letter)}>{letter}</button>
           })
         }
         </section>
