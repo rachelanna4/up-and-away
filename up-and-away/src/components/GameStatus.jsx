@@ -1,10 +1,12 @@
 const formatLives = (lives) => {
     let livesText = ""; 
 
-    if (lives === 1) {
-        livesText = `${lives} life`
+    if (lives <= 0) {
+        livesText = `Game Over: Penelope has fallen from the sky!`
+    } else if (lives === 1) {
+        livesText = `You have ${lives} life left!`
     } else {
-        livesText = `${lives} lives`
+        livesText = `You have ${lives} lives left!`
     }
 
     return livesText;
@@ -24,7 +26,7 @@ const GameStatus = ({word, currLetters}) => {
    
 
     return (
-        <h3>You have {formatLives(lives)} left!</h3>
+        <h3>{formatLives(lives)}</h3>
     )
 }
 
