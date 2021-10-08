@@ -64,6 +64,10 @@
   font-size: 1.2em;
 }
 
+.Keyboard button:hover {
+  background-color: rgba(167, 224, 179, 0.911);
+}
+
 .score-area {
   text-align: center;
 }
