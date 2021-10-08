@@ -1,3 +1,5 @@
+import GameImage from "./GameImage";
+
 const formatLives = (lives) => {
     let livesText = ""; 
 
@@ -37,7 +39,10 @@ const GameStatus = ({word, currLetters}) => {
    }
 
     return (
+        <section>
+        <GameImage />
         <h3>{formatLives(lives)}</h3>
+        </section>
     )
 }
 
