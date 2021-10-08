@@ -32,18 +32,23 @@ const GameStatus = ({word, currLetters}) => {
 
     lives -= wrongLetters.length
 
-   if (hasWon(word, currLetters)) {
-       return (
-           <h3>You have won and pigs CAN fly!</h3>
-       )
-   }
+    const winStatus = hasWon(word, currLetters)
 
+   if (winStatus) {
+       return (
+           <section>
+             <GameImage lives={lives} winStatus={winStatus}/>
+             <h3>You have won and pigs CAN fly!</h3>
+           </section>
+       )
+   } else {
     return (
         <section>
-        <GameImage />
-        <h3>{formatLives(lives)}</h3>
+          <GameImage currLives={lives} winStatus={winStatus}/>
+          <h3>{formatLives(lives)}</h3>
         </section>
     )
+   }
 }
 
 export default GameStatus; 
