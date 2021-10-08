@@ -26,9 +26,19 @@ const generateWord = () => {
 };
 
 const App = () => {
-  const [word] = useState(generateWord());
-  const chosenLetters = [];
-  const [letters, setLetters] = useState(chosenLetters);
+  const [word, setWord] = useState(generateWord());
+  const [letters, setLetters] = useState([]);
+  const [gameFinished, setGameFinished] = useState(false);
+
+  const disableGamePlay = () => {
+    setGameFinished(true);
+  };
+
+  const restartGame = () => {
+    setWord(generateWord());
+    setLetters([]);
+    setGameFinished(false);
+  };
 
   return (
     <div className="App">
@@ -36,10 +46,20 @@ const App = () => {
         <Header />
       </div>
       <div className="game-area">
-        <GameStatus className="GameStatus" word={word} currLetters={letters} />
+        <GameStatus
+          className="GameStatus"
+          word={word}
+          currLetters={letters}
+          disableGamePlay={disableGamePlay}
+          restartGame={restartGame}
+        />
         <div className="word-area">
           <WordDisplay word={word} letters={letters} />
-          <Keyboard currLetters={letters} setLetters={setLetters} />
+          <Keyboard
+            currLetters={letters}
+            setLetters={setLetters}
+            gameFinished={gameFinished}
+          />
         </div>
       </div>
     </div>

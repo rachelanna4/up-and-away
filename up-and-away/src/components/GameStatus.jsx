@@ -3,9 +3,7 @@ import GameImage from "./GameImage";
 const formatLives = (lives) => {
     let livesText = ""; 
 
-    if (lives <= 0) {
-        livesText = `GAME OVER: Penelope has fallen from the sky!`
-    } else if (lives === 1) {
+    if (lives === 1) {
         livesText = `You have ${lives} life left!`
     } else {
         livesText = `You have ${lives} lives left!`
@@ -22,7 +20,7 @@ const hasWon = (word, currLetters) => {
 }
 
 
-const GameStatus = ({word, currLetters}) => {
+const GameStatus = ({word, currLetters, disableGamePlay, restartGame}) => {
 
     let lives = 9; 
 
@@ -34,13 +32,25 @@ const GameStatus = ({word, currLetters}) => {
 
     const winStatus = hasWon(word, currLetters)
 
+    if (winStatus || lives === 0) {
+        disableGamePlay()
+    }
+
    if (winStatus) {
        return (
            <section className = "score-area">
-             <GameImage lives={lives} winStatus={winStatus}/>
-             <h3 className="GameStatus">You have won and pigs <em>CAN</em> fly!</h3>
+             <GameImage lives={lives} winStatus={winStatus} restartGame={restartGame}/>
+             <h3 className="GameStatus">You have won and pigs <em>CAN</em> fly! <br/>Click on Penelope to play again</h3>
+             
            </section>
        )
+   } else if (lives === 0) {
+    return (
+        <section className="score-area">
+          <GameImage currLives={lives} winStatus={winStatus} restartGame={restartGame}/>
+          <h3 className="GameStatus">Penelope has fallen from the sky! <br/> Click on her to play again</h3>
+        </section>
+    )
    } else {
     return (
         <section className="score-area">

@@ -1,4 +1,4 @@
-const Keyboard = ({currLetters, setLetters}) => {
+const Keyboard = ({currLetters, setLetters, gameFinished}) => {
 
     const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
@@ -11,7 +11,7 @@ const Keyboard = ({currLetters, setLetters}) => {
     return (
         <section className="Keyboard">
         {alphabet.map(letter => {
-            return <button key={letter} onClick={() => addLetter(letter)} disabled={currLetters.includes(letter)}>{letter}</button>
+            return <button key={letter} onClick={() => addLetter(letter)} disabled={currLetters.includes(letter) || gameFinished}>{letter}</button>
           })
         }
         </section>
