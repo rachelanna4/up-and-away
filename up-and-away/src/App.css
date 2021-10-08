@@ -63,7 +63,7 @@
   font-weight: 600;
 }
 
-button.ClueDisplay {
+.ClueDisplay button {
   width: 30%;
   margin: 20px auto 5px;
   border-radius: 10px;
@@ -71,6 +71,15 @@ button.ClueDisplay {
   font-size: 0.9em;
   font-weight: 600;
   background-color: rgb(243, 171, 183);
+}
+
+.ClueDisplay p {
+  display: inline-block;
+  margin: 20px auto 5px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .Keyboard {

@@ -14,18 +14,18 @@ const wordCategories = [
   {
     name: "animals",
     options: [
-      { word: "giraffe", clue: "this animal has a very long neck" },
-      { word: "zebra", clue: "this animal has stripes" },
-      { word: "whale", clue: "this animal is the largest mammal" },
-      { word: "polar bear", clue: "this animal lives in the Arctic" },
-      { word: "kangaroo", clue: "this animal has a pouch to carry its babies" },
+      { word: "giraffe", clue: "This animal has a very long neck" },
+      { word: "zebra", clue: "This animal has stripes" },
+      { word: "whale", clue: "This animal is the largest mammal" },
+      { word: "polar bear", clue: "This animal lives in the Arctic" },
+      { word: "kangaroo", clue: "This animal has a pouch to carry its babies" },
     ],
   },
   {
     name: "halloween",
     options: [
-      { word: "pumpkin", clue: "you can carve a face into this vegetable" },
-      { word: "black cat", clue: "a witch might have this pet" },
+      { word: "pumpkin", clue: "You can carve a face into this vegetable" },
+      { word: "black cat", clue: "A witch might have this pet" },
     ],
   },
 ];

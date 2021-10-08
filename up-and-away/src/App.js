@@ -28,6 +28,7 @@ const App = () => {
   const [word, setWord] = useState(generateWord());
   const [letters, setLetters] = useState([]);
   const [gameFinished, setGameFinished] = useState(false);
+  const [clueReveal, setClueReveal] = useState(false);
 
   const disableGamePlay = () => {
     setGameFinished(true);
@@ -37,6 +38,7 @@ const App = () => {
     setWord(generateWord(selectedCategory));
     setLetters([]);
     setGameFinished(false);
+    setClueReveal(false);
   };
 
   return (
@@ -59,7 +61,11 @@ const App = () => {
             letters={letters}
             gameFinished={gameFinished}
           />
-          <ClueDisplay word={word.word} />
+          <ClueDisplay
+            clue={word.clue}
+            clueReveal={clueReveal}
+            setClueReveal={setClueReveal}
+          />
           <Keyboard
             currLetters={letters}
             setLetters={setLetters}
