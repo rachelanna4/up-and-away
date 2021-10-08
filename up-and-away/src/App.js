@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className="App">
       <div>
-        <Header className="Header" />
+        <Header />
       </div>
       <div className="game-area">
         <GameStatus className="GameStatus" word={word} currLetters={letters} />

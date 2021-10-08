@@ -1,19 +1,30 @@
+@font-face {
+  font-family: "Whale";
+  src: url("./WhaleITriedRegular-xWq0.ttf") format("truetype");
+}
+
 .App {
   width: 100%;
   margin: 0;
   display: grid;
-  grid-template-rows: 1fr 4fr;
-  grid-gap: 1em;
+  grid-template-rows: 1fr 2fr;
+  background-color: rgba(50, 98, 117, 0.979);
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
-.App > div {
-  border: 1px solid blue;
-}
-
-.Header {
-  grid-area: header;
-  border: 1px solid black;
+.heading {
   text-align: center;
+  font-family: "Whale", sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 6px;
+  margin: 20px auto;
+}
+
+.intro {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .game-area {
@@ -22,22 +33,25 @@
   grid-gap: 1em;
 }
 
-.game-area > div {
-  border: 1px solid blue;
-}
-
 .word-area {
   display: grid;
   grid-template-rows: 1fr 2fr;
   grid-gap: 1em;
 }
 
-.WordDisplay {
-  border: 1px solid blue;
+.WordDisplay h4 {
+  text-align: center;
+  margin: 30px;
+  font-family: "Whale", sans-serif;
+  letter-spacing: 4px;
+  font-size: 2em;
+}
+
+.WordDisplay p {
+  text-align: center;
 }
 
 .Keyboard {
-  border: 1px solid blue;
 }
 
 .score-area {
@@ -47,10 +61,18 @@
 }
 
 .GameImage {
-  border: 1px solid blue;
-  width: 400px;
+  width: 375px;
+
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url("./clouds.png");
+  background-size: 350px 350px;
 }
 
 .GameStatus {
-  border: 1px solid blue;
+  margin: auto auto;
+  font-family: "Whale", sans-serif;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  color: white;
 }
