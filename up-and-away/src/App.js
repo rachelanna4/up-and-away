@@ -3,6 +3,9 @@ import Header from "./components/Header.jsx";
 import Keyboard from "./components/Keyboard";
 import GameStatus from "./components/GameStatus";
 import WordDisplay from "./components/WordDisplay";
+import ClueDisplay from "./components/ClueDisplay";
+import CategorySelector from "./components/CategorySelector";
+
 import { useState } from "react";
 
 const generateWord = () => {
@@ -53,11 +56,13 @@ const App = () => {
           restartGame={restartGame}
         />
         <div className="word-area">
+          <CategorySelector restartGame={restartGame} />
           <WordDisplay
             word={word}
             letters={letters}
             gameFinished={gameFinished}
           />
+          <ClueDisplay word={word} />
           <Keyboard
             currLetters={letters}
             setLetters={setLetters}
