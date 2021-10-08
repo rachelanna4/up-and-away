@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/Header.jsx";
-
 import Keyboard from "./components/Keyboard";
 import GameStatus from "./components/GameStatus";
 import WordDisplay from "./components/WordDisplay";

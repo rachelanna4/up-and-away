@@ -40,7 +40,7 @@ const GameStatus = ({word, currLetters, disableGamePlay, restartGame}) => {
        return (
            <section className = "score-area">
              <GameImage lives={lives} winStatus={winStatus} restartGame={restartGame}/>
-             <h3 className="GameStatus">You have won and pigs <em>CAN</em> fly! <br/>Click on Penelope to play again</h3>
+             <h3 className="GameStatus">You have won and pigs <em>CAN</em> fly! <br/><span className="play-again">Click on Penelope to play again</span></h3>
              
            </section>
        )
@@ -48,7 +48,7 @@ const GameStatus = ({word, currLetters, disableGamePlay, restartGame}) => {
     return (
         <section className="score-area">
           <GameImage currLives={lives} winStatus={winStatus} restartGame={restartGame}/>
-          <h3 className="GameStatus">Penelope has fallen from the sky! <br/> Click on her to play again</h3>
+          <h3 className="GameStatus">Penelope has fallen from the sky! <br/><span className="play-again">Click on her to play again</span></h3>
         </section>
     )
    } else {
