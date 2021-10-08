@@ -60,6 +60,7 @@
   height: 50px;
   margin: 3px 3px;
   border-radius: 50%;
+  font-size: 1.2em;
 }
 
 .score-area {
@@ -78,6 +79,6 @@
   margin: 30px auto;
   font-family: "Whale", sans-serif;
   letter-spacing: 4px;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: white;
 }
