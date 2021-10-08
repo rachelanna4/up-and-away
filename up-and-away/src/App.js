@@ -5,30 +5,24 @@ import GameStatus from "./components/GameStatus";
 import WordDisplay from "./components/WordDisplay";
 import ClueDisplay from "./components/ClueDisplay";
 import CategorySelector from "./components/CategorySelector";
+import wordCategories from "./data/word-categories";
 
 import { useState } from "react";
 
-const generateWord = () => {
-  const wordsList = [
-    "RAINDROP",
-    "ROSES",
-    "WHISKERS",
-    "KITTEN",
-    "KETTLE",
-    "MITTENS",
-    "PACKAGE",
-    "STRING",
-    "APPLE",
-    "STRUDEL",
-    "SNOWFLAKE",
-  ];
+const generateWord = (selectedCategory) => {
+  const filteredCategory = wordCategories.filter((category) => {
+    return category.name === selectedCategory;
+  });
+
+  const wordsList = filteredCategory[0].options;
+
   const wordCount = wordsList.length;
   const index = Math.floor(Math.random() * wordCount);
   return wordsList[index];
 };
 
 const App = () => {
-  const [word, setWord] = useState(generateWord());
+  const [word, setWord] = useState(generateWord("animals"));
   const [letters, setLetters] = useState([]);
   const [gameFinished, setGameFinished] = useState(false);
 
@@ -50,7 +44,7 @@ const App = () => {
       <div className="game-area">
         <GameStatus
           className="GameStatus"
-          word={word}
+          word={word.word}
           currLetters={letters}
           disableGamePlay={disableGamePlay}
           restartGame={restartGame}
@@ -58,11 +52,11 @@ const App = () => {
         <div className="word-area">
           <CategorySelector restartGame={restartGame} />
           <WordDisplay
-            word={word}
+            word={word.word}
             letters={letters}
             gameFinished={gameFinished}
           />
-          <ClueDisplay word={word} />
+          <ClueDisplay word={word.word} />
           <Keyboard
             currLetters={letters}
             setLetters={setLetters}

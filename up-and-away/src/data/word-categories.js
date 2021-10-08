@@ -10,8 +10,21 @@
 
 // ]
 
+const wordCategories = [
+  {
+    name: "animals",
+    options: [
+      { word: "giraffe", clue: "this animal has a very long neck" },
+      { word: "zebra", clue: "this animal has stripes" },
+      { word: "whale", clue: "this animal is the largest mammal" },
+      { word: "polar bear", clue: "this animal lives in the Arctic" },
+      { word: "kangaroo", clue: "this animal has a pouch to carry its babies" },
+    ],
+  },
+  {
+    name: "food",
+    options: [{ word: "pizza", clue: "tasty" }],
+  },
+];
 
-const wordsCategories = [
-    {category: animals, options: [{word:"giraffe", clue:"this animal has a very long neck"}, {word:"zebra", clue:"this animal has stripes"}, {word:"whale", clue:"this animal is the largest mammal"}, {word:"polar bear", clue:"this animal lives in the Arctic"}, {word:"kangaroo", clue:"this animal has a pouch to carry its babies"} ]}
-]
-
+export default wordCategories;
