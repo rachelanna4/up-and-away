@@ -13,7 +13,7 @@ const WordDisplay = ({word, letters}) => {
     const splitWord = lettersToDisplay.split("").join(" ")
 
     return (
-        <section>
+        <section className="WordDisplay">
             <h4>The word to guess is:</h4>
             <p>{splitWord}</p>
         </section>

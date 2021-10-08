@@ -1,3 +1,56 @@
 .App {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-gap: 1em;
+}
+
+.App > div {
+  border: 1px solid blue;
+}
+
+.Header {
+  grid-area: header;
+  border: 1px solid black;
   text-align: center;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.game-area > div {
+  border: 1px solid blue;
+}
+
+.word-area {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 1em;
+}
+
+.WordDisplay {
+  border: 1px solid blue;
+}
+
+.Keyboard {
+  border: 1px solid blue;
+}
+
+.score-area {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  grid-gap: 1em;
+}
+
+.GameImage {
+  border: 1px solid blue;
+  width: 400px;
+}
+
+.GameStatus {
+  border: 1px solid blue;
 }

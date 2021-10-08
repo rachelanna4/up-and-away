@@ -32,14 +32,16 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header className="Header" />
-      <Keyboard
-        className="Keyboard"
-        currLetters={letters}
-        setLetters={setLetters}
-      />
-      <GameStatus className="GameStatus" word={word} currLetters={letters} />
-      <WordDisplay className="WordDisplay" word={word} letters={letters} />
+      <div>
+        <Header className="Header" />
+      </div>
+      <div className="game-area">
+        <GameStatus className="GameStatus" word={word} currLetters={letters} />
+        <div className="word-area">
+          <WordDisplay word={word} letters={letters} />
+          <Keyboard currLetters={letters} setLetters={setLetters} />
+        </div>
+      </div>
     </div>
   );
 };

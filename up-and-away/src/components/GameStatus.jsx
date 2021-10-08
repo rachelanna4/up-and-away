@@ -36,16 +36,16 @@ const GameStatus = ({word, currLetters}) => {
 
    if (winStatus) {
        return (
-           <section>
+           <section className = "score-area">
              <GameImage lives={lives} winStatus={winStatus}/>
-             <h3>You have won and pigs CAN fly!</h3>
+             <h3 className="GameStatus">You have won and pigs CAN fly!</h3>
            </section>
        )
    } else {
     return (
-        <section>
+        <section className="score-area">
           <GameImage currLives={lives} winStatus={winStatus}/>
-          <h3>{formatLives(lives)}</h3>
+          <h3 className="GameStatus">{formatLives(lives)}</h3>
         </section>
     )
    }

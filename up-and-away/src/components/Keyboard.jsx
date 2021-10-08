@@ -9,7 +9,7 @@ const Keyboard = ({currLetters, setLetters}) => {
     
 
     return (
-        <section>
+        <section className="Keyboard">
         {alphabet.map(letter => {
             return <button key={letter} onClick={() => addLetter(letter)} disabled={currLetters.includes(letter)}>{letter}</button>
           })
