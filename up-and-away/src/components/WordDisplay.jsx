@@ -6,7 +6,10 @@ const WordDisplay = ({word, letters, gameFinished}) => {
         lettersToDisplay = word;
     } else {
     for (let i = 0; i < word.length; i++) {
-        if(letters.includes(word[i])) {
+        if(word[i] === " ") {
+            lettersToDisplay += " ";
+        } else 
+        if (letters.includes(word[i])) {
             lettersToDisplay += word[i]
         } else {
             lettersToDisplay += "_"

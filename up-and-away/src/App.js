@@ -9,7 +9,7 @@ import wordCategories from "./data/word-categories";
 
 import { useState } from "react";
 
-const generateWord = (selectedCategory) => {
+const generateWord = (selectedCategory = "animals") => {
   const filteredCategory = wordCategories.filter((category) => {
     return category.name === selectedCategory;
   });
@@ -18,11 +18,14 @@ const generateWord = (selectedCategory) => {
 
   const wordCount = wordsList.length;
   const index = Math.floor(Math.random() * wordCount);
-  return wordsList[index];
+
+  const selectedWord = { ...wordsList[index] };
+  selectedWord.word = selectedWord.word.toUpperCase();
+  return selectedWord;
 };
 
 const App = () => {
-  const [word, setWord] = useState(generateWord("animals"));
+  const [word, setWord] = useState(generateWord());
   const [letters, setLetters] = useState([]);
   const [gameFinished, setGameFinished] = useState(false);
 

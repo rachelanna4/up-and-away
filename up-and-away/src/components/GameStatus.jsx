@@ -13,7 +13,9 @@ const formatLives = (lives) => {
 }
 
 const hasWon = (word, currLetters) => {
-    if (word.split("").every(letter => currLetters.includes(letter))) {
+    const wordLetters = word.replace(" ", "")
+
+    if (wordLetters.split("").every(letter => currLetters.includes(letter))) {
         return true
     }
     return false
