@@ -4,7 +4,7 @@ const formatLives = (lives) => {
     let livesText = ""; 
 
     if (lives <= 0) {
-        livesText = `Game Over: Penelope has fallen from the sky!`
+        livesText = `GAME OVER: Penelope has fallen from the sky!`
     } else if (lives === 1) {
         livesText = `You have ${lives} life left!`
     } else {
@@ -38,7 +38,7 @@ const GameStatus = ({word, currLetters}) => {
        return (
            <section className = "score-area">
              <GameImage lives={lives} winStatus={winStatus}/>
-             <h3 className="GameStatus">You have won and pigs CAN fly!</h3>
+             <h3 className="GameStatus">You have won and pigs <em>CAN</em> fly!</h3>
            </section>
        )
    } else {

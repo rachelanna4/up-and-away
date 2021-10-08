@@ -7,7 +7,7 @@
   width: 100%;
   margin: 0;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
   background-color: rgba(50, 98, 117, 0.979);
   font-family: "Poppins", sans-serif;
   color: white;
@@ -33,12 +33,6 @@
   grid-gap: 1em;
 }
 
-.word-area {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-gap: 1em;
-}
-
 .WordDisplay h4 {
   text-align: center;
   margin: 30px;
@@ -48,29 +42,40 @@
 }
 
 .WordDisplay p {
+  margin: 30px;
   text-align: center;
+  letter-spacing: 10px;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .Keyboard {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.Keyboard button {
+  width: 50px;
+  height: 50px;
+  margin: 3px 3px;
+  border-radius: 50%;
 }
 
 .score-area {
-  display: grid;
-  grid-template-rows: 4fr 1fr;
-  grid-gap: 1em;
+  text-align: center;
 }
 
 .GameImage {
   width: 375px;
-
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 50%;
   background-image: url("./clouds.png");
   background-size: 350px 350px;
 }
 
 .GameStatus {
-  margin: auto auto;
+  margin: 30px auto;
   font-family: "Whale", sans-serif;
   letter-spacing: 4px;
   font-size: 1.5em;
