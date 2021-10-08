@@ -33,8 +33,8 @@ const App = () => {
     setGameFinished(true);
   };
 
-  const restartGame = () => {
-    setWord(generateWord());
+  const restartGame = (selectedCategory = "animals") => {
+    setWord(generateWord(selectedCategory));
     setLetters([]);
     setGameFinished(false);
   };

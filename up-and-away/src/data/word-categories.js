@@ -22,8 +22,11 @@ const wordCategories = [
     ],
   },
   {
-    name: "food",
-    options: [{ word: "pizza", clue: "tasty" }],
+    name: "halloween",
+    options: [
+      { word: "pumpkin", clue: "you can carve a face into this vegetable" },
+      { word: "black cat", clue: "a witch might have this pet" },
+    ],
   },
 ];
 
