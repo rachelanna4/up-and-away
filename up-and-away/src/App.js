@@ -54,7 +54,11 @@ const App = () => {
           restartGame={restartGame}
         />
         <div className="word-area">
-          <WordDisplay word={word} letters={letters} />
+          <WordDisplay
+            word={word}
+            letters={letters}
+            gameFinished={gameFinished}
+          />
           <Keyboard
             currLetters={letters}
             setLetters={setLetters}

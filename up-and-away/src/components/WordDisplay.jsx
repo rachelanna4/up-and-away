@@ -1,7 +1,10 @@
-const WordDisplay = ({word, letters}) => {
+const WordDisplay = ({word, letters, gameFinished}) => {
 
     let lettersToDisplay = ""
 
+    if (gameFinished) {
+        lettersToDisplay = word;
+    } else {
     for (let i = 0; i < word.length; i++) {
         if(letters.includes(word[i])) {
             lettersToDisplay += word[i]
@@ -9,6 +12,7 @@ const WordDisplay = ({word, letters}) => {
             lettersToDisplay += "_"
         }
     }
+}
 
     return (
         <section className="WordDisplay">
