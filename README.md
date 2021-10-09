@@ -1,46 +1,49 @@
-# Tiny React Apps
+# Up and Away
 
-When learning a new technology, especially frameworks, beginners often fall in the trap of trying to bit more than they can chew. To learn React, instead of writing one fully-featured application, we propose building several tiny applications that implement simple ideas. The component-based nature of React plays really well with this approach, tiny applications can be as small as a single component or they can later become part of a bigger application. Either way, you'll get tons of practice by being exposed to different problems and patterns.
+[Click here to play the game]().
 
-Tiny applications should be achievable goals, small projects that you can start and finish in a matter of days and you can potentially improve or scale later. Finishing a project, no matter how small, will give you momentum and the boost of confidence that you need to keep developing your skills.
+## Background
 
-Another great benefit of building several tiny apps is that you get to show future employers a wider range of skills by choosing to use different libraries and approaches.
+Up and Away was the first web app that I built in React.
+It is a take on the classic game of 'Hangman' designed with child-friendly user interface in mind.
+Users can select from a variety of category which generates a word they need to guess. They must guess the word before Penelope the pig runs out of balloons!
+If the user gets stuck, they can access a clue to help them before they run out of lives.
 
-## Ideas
+## Local Development Setup
 
-If you're not feeling too confident, we recommend building a to-do list and gradually building up to more complicated functionality (similar to the lecture example).
+Follow the set-up instructions below to view and run the code behind this project on your own local machine.
 
-### Other ideas
+### Pre-requisites
 
-Constrain yourself to just 1 or 2 features. Only think about extending your app after implementing the core idea. Think of a common problem that you face daily or an app on your phone that you don't quite like how it works. What could you do better?
+- Install Node.js which acts as the runtime environment for this project. This should also install npm to manage all of the  
+   required dependencies.
 
-1. To-Do List. Show tasks needing to be done, be able to add a new one, delete tasks.
+  [Follow this link to download Node.js with npm](https://nodejs.org/en/download/current/).
 
-2. Noughts and Crosses. Track scores - could you make this so you could programmatically make different size boards?
+  Minimum version recommended: Node v16.8.0
 
-3. Recipe idea generator: plug in some ingredients and get a random algorithmically created method.
+### Clone Repository
 
-4. Hangman. Choose from different categories, keep track of scores... how will you represent it graphically? (You could look into svg, html5 canvas, or just find some images online)
+To clone the repository for access on your local machine, run the following command in your terminal:
 
-5. A resource management game - have a look at [Universal Paperclips](http://www.decisionproblem.com/paperclips/index2.html) for inspiration (think how you will need to use setTimeout / setInterval).
+`git clone <PUBLIC URL HERE>`
 
-6. Build a **Calculator app** that replicates the functionality and looks of your operating system's calculator. You could head into scientific territory if you feel brave...
+### Install Dependencies
 
-## Instructions
+Navigate to the folder to which the repository was cloned and run the following command in your terminal:
 
-We've attached a checklist that applies to all React project development. There will be a few things you don't know about yet so you can ignore those steps; for now, the most important things to think about are planning out your app, then constructing a static version with no functionality, then making it do stuff!
+`npm install`
 
-_REMEMBER:_ Commit changes after finishing a meaningful unit of work (a component, a feature of functionality, a successful refactor) never hurt anyone.
+This will install all necessary dependencies used in the project, including React.
 
-Use [create-react-app](https://github.com/facebook/create-react-app) to bootleg your project. We recommend you do this with `npx create-react-app --use-npm <project-name>` - this means you don't need to globally install create-react-app and risk it becoming outdated. [More on npx](https://www.npmjs.com/package/npx).
+### Run Game
 
-## Credits
+To run the game on your local machine, run the following command in the terminal:
 
-The idea for React tiny apps comes from the following article by Andrew Farmer:
+`npm start`
 
-- https://www.javascriptstuff.com/tiny-unique-app/
+This should open the game in your web browser
 
-Some examples of the tiny-apps that they built can be found here:
+The game is also hosted and can be accessed via the link at the top of this README.
 
-- [Emoji Search](https://ahfarmer.github.io/emoji-search/)
-- [Calculator](https://ahfarmer.github.io/calculator/)
+Happy gaming!
