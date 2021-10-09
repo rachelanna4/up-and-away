@@ -1,6 +1,6 @@
 # Up and Away
 
-[Click here to play the game]().
+[Click here to play the game](https://rachelanna4.github.io/up-and-away/).
 
 ## Background
 
@@ -26,7 +26,7 @@ Follow the set-up instructions below to view and run the code behind this projec
 
 To clone the repository for access on your local machine, run the following command in your terminal:
 
-`git clone <PUBLIC URL HERE>`
+`git clone https://github.com/rachelanna4/up-and-away.git`
 
 ### Install Dependencies
 
@@ -38,7 +38,7 @@ This will install all necessary dependencies used in the project, including Reac
 
 ### Run Game
 
-To run the game on your local machine, run the following command in the terminal:
+To run the game in local development mode, run the following command in the terminal:
 
 `npm start`
 
