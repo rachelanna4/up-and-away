@@ -9,7 +9,10 @@ import wordCategories from "./data/word-categories";
 
 import { useState } from "react";
 
-const generateWord = (selectedCategory = "animals") => {
+const generateWord = (selectedCategory) => {
+  if (!selectedCategory) {
+    selectedCategory = "animals";
+  }
   const filteredCategory = wordCategories.filter((category) => {
     return category.name === selectedCategory;
   });
@@ -29,13 +32,17 @@ const App = () => {
   const [letters, setLetters] = useState([]);
   const [gameFinished, setGameFinished] = useState(false);
   const [clueReveal, setClueReveal] = useState(false);
+  const [category, setCategory] = useState("");
 
   const disableGamePlay = () => {
     setGameFinished(true);
   };
 
-  const restartGame = (selectedCategory = "animals") => {
-    setWord(generateWord(selectedCategory));
+  const restartGame = (category) => {
+    if (!category) {
+      category = "animals";
+    }
+    setWord(generateWord(category));
     setLetters([]);
     setGameFinished(false);
     setClueReveal(false);
@@ -55,7 +62,11 @@ const App = () => {
           restartGame={restartGame}
         />
         <div className="word-area">
-          <CategorySelector restartGame={restartGame} />
+          <CategorySelector
+            category={category}
+            setCategory={setCategory}
+            restartGame={restartGame}
+          />
           <WordDisplay
             word={word.word}
             letters={letters}
