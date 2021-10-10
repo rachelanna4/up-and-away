@@ -189,6 +189,139 @@ const wordCategories = [
       },
     ],
   },
+  {
+    name: "countries",
+    options: [
+      {
+        word: "france",
+        clue: "You can visit the Eiffel Tower in this country",
+      },
+      {
+        word: "england",
+        clue: "the old and mysterious Stonehenge can be found in this country",
+      },
+      {
+        word: "scotland ",
+        clue: "The mythical Loch Ness Monster is believed to live in this country",
+      },
+      {
+        word: "wales",
+        clue: "This UK country has a red dragon on its flag",
+      },
+      {
+        word: "ireland",
+        clue: "Leprechauns are mythical creatures believed to live in this country",
+      },
+      {
+        word: "spain",
+        clue: "Tapas are a popular way to serve food in this country",
+      },
+      {
+        word: "germany",
+        clue: "The tradition of having a Christmas tree started in this country",
+      },
+      {
+        word: "japan",
+        clue: "Karaoke singing originated in this country",
+      },
+      {
+        word: "poland",
+        clue: "The capital city of this country is Warsaw",
+      },
+      {
+        word: "cuba",
+        clue: "This country is the largest island in the Caribbean",
+      },
+      {
+        word: "jamaica",
+        clue: "The reggae music style originated in this Caribbean country",
+      },
+      {
+        word: "morocco",
+        clue: "The capital city of this North African country is Rabat",
+      },
+      {
+        word: "chilé",
+        clue: "One of the driest places on earth, the Atacama Desert, is located in this country",
+      },
+      {
+        word: "perú",
+        clue: "Machu Picchu, a site of ancient Inca ruins, can be found in this country",
+      },
+      {
+        word: "Mount Everest is located on the border of China and this country",
+        clue: "Nepal",
+      },
+      {
+        word: "brazil",
+        clue: "Portuguese is the official language of this South-American country",
+      },
+      {
+        word: "egypt",
+        clue: "In the past, this country was rules by the Pharaohs",
+      },
+      {
+        word: "australia",
+        clue: "The largest eco-system on Earth, the Great Barrier Reef, is on the coast of this country",
+      },
+      {
+        word: "new zealand",
+        clue: "The Māori are the indigenous Polynesian people of this country",
+      },
+      {
+        word: "mexico",
+        clue: "Tacos, burritos, and quesadillas are traditional foods from this country",
+      },
+      {
+        word: "thailand",
+        clue: "Siamese cats are native to this country",
+      },
+      {
+        word: "united states of america",
+        clue: "The Grand Canyon can be found in this country",
+      },
+      {
+        word: "canada",
+        clue: "The official languages of this North American country are English and French",
+      },
+      {
+        word: "kenya",
+        clue: "The capital city of this country is Nairobi",
+      },
+      {
+        word: "tanzania",
+        clue: "The dormant volcano, Mount Kilimanjaro can be found in this country",
+      },
+      {
+        word: "italy",
+        clue: "The Mediterranean islands of Sicily and Sardinia are regions of this country",
+      },
+      {
+        word: "india",
+        clue: "Chapati, Naan, and Roti are types of bread that originate from this country",
+      },
+      {
+        word: "greece",
+        clue: "The first Olympic games took place in this country",
+      },
+      {
+        word: "russia",
+        clue: "This country is the largest in the world",
+      },
+      {
+        word: "iceland",
+        clue: "Almost 11% of this island country is covered by glaciers",
+      },
+      {
+        word: "indonesia",
+        clue: "This country has more active volcanos than any other country",
+      },
+      {
+        word: "norway",
+        clue: "The capital of this country is Oslo",
+      },
+    ],
+  },
 ];
 
 export default wordCategories;

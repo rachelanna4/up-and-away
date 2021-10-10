@@ -5,6 +5,7 @@ const CategorySelector = ({category, setCategory, restartGame}) => {
         }}>
             <option value="" disabled hidden>Choose a word category</option>
             <option value="animals">Animals 🦊</option>
+            <option value="countries">Countries 🌍 </option>
             <option value="nintendo">Nintendo Characters 🎮 </option>
             <option value="harryPotter">Harry Potter Characters 🪄</option>
             <option value="superheroes">Superheroes and Villians 🦸🏻</option>
