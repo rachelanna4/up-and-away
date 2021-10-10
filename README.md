@@ -1,8 +1,6 @@
 # Up and Away
 
-[Click here to play the game](https://rachelanna4.github.io/up-and-away/).
-
-## Background
+[Click here to play the game](https://rachelanna4.github.io/up-and-away/3rtkm). ## Background
 
 Up and Away was the first web app that I built in React.
 It is a take on the classic game of 'Hangman' designed with child-friendly user interface in mind.

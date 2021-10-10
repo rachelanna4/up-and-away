@@ -60,10 +60,22 @@ const wordCategories = [
   {
     name: "harryPotter",
     options: [
-      { word: "harry potter", clue: "He is the boy who lived" },
+      { word: "harry potter", clue: "He is known as the boy who lived" },
       { word: "ron weasley", clue: "He has a rat called scabbers" },
       { word: "hermione granger", clue: "Her parents are both muggles" },
+      { word: "remus lupin", clue: "His biggest fear is a full moon" },
       { word: "draco malfoy", clue: "His best friends are Crabbe and Goyle" },
+      { word: "lucius malfoy", clue: "He is Draco's father" },
+      {
+        word: "moaning myrtle",
+        clue: "She lives in the girls bathroom at Hogwarts",
+      },
+      {
+        word: "nearly headless nick",
+        clue: "He is the house ghost of Gryffindor",
+      },
+      { word: "george weasley", clue: "He is one of the Weasley twins" },
+      { word: "argus filch", clue: "He has a cat called Mrs Norris" },
       { word: "crookshanks", clue: "He is Hermione's pet cat" },
       {
         word: "neville longbottom",
@@ -91,6 +103,10 @@ const wordCategories = [
         word: "madame hooch",
         clue: "She taught Hogwarts students how to play Quidditch",
       },
+      {
+        word: "sorting hat",
+        clue: "It decides which Hogwarts house to put students in",
+      },
       { word: "severus snape", clue: "He was head of Slytherin house" },
     ],
   },
@@ -105,14 +121,72 @@ const wordCategories = [
       { word: "thor", clue: "His brother is Loki" },
       { word: "iron man", clue: "This superhero owns Stark Industries" },
       { word: "black panther", clue: "This superhero is the King of Wakanda" },
+      { word: "wolverine", clue: "He has 3 metallic claws on each hand" },
       { word: "catwoman", clue: "She is a Gotham City burglar" },
+      {
+        word: "magneto",
+        clue: "He used to be a member of the X-Men but then became their enemy",
+      },
       {
         word: "the joker",
         clue: "He is known as the Clown Prince of Crime",
       },
-      { word: "lex luthor", clue: "He is Superman's arch-nemesis" },
+      {
+        word: "wonder woman",
+        clue: "She is one of the original members of the Justice League",
+      },
       { word: "lex luthor", clue: "He is Superman's arch-nemesis" },
       { word: "loki", clue: "He is the brother of Thor" },
+    ],
+  },
+  {
+    name: "nintendo",
+    options: [
+      { word: "yoshi", clue: "He is the dinosaur sidekick of Mario and Luigi" },
+      { word: "bowser", clue: "He always tries to kidnap Princess Peach" },
+      {
+        word: "princess peach",
+        clue: "She is the princess of the Mushroom Kingdom",
+      },
+      { word: "luigi", clue: "He is the younger brother of Mario" },
+      { word: "mario", clue: "He is a plumber who wears a red cap" },
+      {
+        word: "link",
+        clue: "He is the hero who fights to save Princess Zelda",
+      },
+      { word: "donkey kong", clue: "He is an ape who loves bananas" },
+      { word: "princess zelda", clue: " She is the ruler of Hyrule" },
+      {
+        word: "pikachu",
+        clue: "It is a pokemon species with a lightening bolt-shaped electric tail",
+      },
+      { word: "wario", clue: "He is an arch-nemesis of Mario" },
+      {
+        word: "sonic the hedgehog",
+        clue: "This blue character can run faster than the speed of sound",
+      },
+      {
+        word: "isabelle",
+        clue: "She is the friendly secretary of Animal Crossing",
+      },
+      {
+        word: "koopa troopa",
+        clue: "This character is one of Bowser's minions",
+      },
+      {
+        word: "toadette",
+        clue: "She is a pink and white Toad who loves to drive on the kart track",
+      },
+      {
+        word: "kirby",
+        clue: "This pink character lives in Dream Land on Planet Popstar",
+      },
+      { word: "toad", clue: "He is the loyal servant of Princess Peach" },
+      { word: "king boo", clue: "He is the leader of the Boos" },
+      {
+        word: "shy guys",
+        clue: "They are enemies of Mario who wear masks to hide their faces",
+      },
     ],
   },
 ];
