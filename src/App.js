@@ -38,11 +38,15 @@ const App = () => {
     setGameFinished(true);
   };
 
-  const restartGame = (category) => {
-    if (!category) {
-      category = "animals";
+  const restartGame = (selectedCategory) => {
+    let currentCategory = category;
+
+    if (selectedCategory) {
+      currentCategory = selectedCategory;
+      setCategory(selectedCategory);
     }
-    setWord(generateWord(category));
+
+    setWord(generateWord(currentCategory));
     setLetters([]);
     setGameFinished(false);
     setClueReveal(false);
