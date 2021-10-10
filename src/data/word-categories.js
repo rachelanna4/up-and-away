@@ -322,6 +322,87 @@ const wordCategories = [
       },
     ],
   },
+  {
+    name: "christmas",
+    options: [
+      {
+        word: "santa claus",
+        clue: "He travels around the world on a sleigh delivering presents",
+      },
+      {
+        word: "the nativity",
+        clue: "This is the story of Jesus' birth",
+      },
+      {
+        word: "rudolph",
+        clue: "He is a reindeer with a red nose",
+      },
+      {
+        word: "baubles",
+        clue: "You might hang these on your christmas tree",
+      },
+      {
+        word: "reindeer",
+        clue: "Santa uses these animals to fly his sleigh",
+      },
+      {
+        word: "mince pies",
+        clue: "A traditional English sweet christmas snack made of fruit and pastry",
+      },
+      {
+        word: "eggnog",
+        clue: "A traditional creamy christmas drink",
+      },
+      {
+        word: "christmas tree",
+        clue: "You might put a star or an angel on top of one of these",
+      },
+      {
+        word: "advent calendar",
+        clue: "You can open a door on one of these each day during December to find a chocolate or a picture behind it",
+      },
+      {
+        word: "christmas carols",
+        clue: "You sing these at Christmas-time",
+      },
+      {
+        word: "elves",
+        clue: "They live in the North Pole and work for Santa",
+      },
+      {
+        word: "stocking",
+        clue: "You might find your Christmas presents inside one of these",
+      },
+      {
+        word: "snowman",
+        clue: "This festive creation often has a carrot for a nose",
+      },
+      {
+        word: "december",
+        clue: "Christmas is during this month",
+      },
+      {
+        word: "the north pole",
+        clue: "This is the place where Santa Claus lives",
+      },
+      {
+        word: "wreath",
+        clue: "You might hang these on your front door",
+      },
+      {
+        word: "nutcracker",
+        clue: "A wooden toy soldier thought to bring good luck",
+      },
+      {
+        word: "mistletoe",
+        clue: "It is tradition to kiss underneath this plant ",
+      },
+      {
+        word: "christmas eve",
+        clue: "The day before Christmas ",
+      },
+    ],
+  },
 ];
 
 export default wordCategories;

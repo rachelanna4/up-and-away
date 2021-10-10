@@ -10,6 +10,7 @@ const CategorySelector = ({category, setCategory, restartGame}) => {
             <option value="harryPotter">Harry Potter Characters 🪄</option>
             <option value="superheroes">Superheroes and Villians 🦸🏻</option>
             <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
         </select>
     )
 }
