@@ -1,22 +1,24 @@
 # Up and Away
 
-[Click here to play the game](https://rachelanna4.github.io/up-and-away/).
+[Click here to play the game](https://rachelanna4.github.io/up-and-away/)
 
 ## Background
 
-Up and Away was the first web app that I built in React.
+Up and Away was the first app that I built in React.
 It is a take on the classic game of 'Hangman' designed with child-friendly user interface in mind.
 Users can select from a variety of category which generates a word they need to guess. They must guess the word before Penelope the pig runs out of balloons!
 If the user gets stuck, they can access a clue to help them before they run out of lives.
 
+Initially designed as a web app, it is now responsive and works on tablet and mobile devices as well as on laptop/desktop screens.
+
 ## Local Development Setup
 
-Follow the set-up instructions below to view and run the code behind this project on your own local machine.
+Follow the set-up instructions below to view and run the code behind this project on your own local machine:
 
 ### Pre-requisites
 
 - Install Node.js which acts as the runtime environment for this project. This should also install npm to manage all of the  
-   required dependencies.
+   required dependencies
 
   [Follow this link to download Node.js with npm](https://nodejs.org/en/download/current/).
 
@@ -34,7 +36,7 @@ Navigate to the folder to which the repository was cloned and run the following 
 
 `npm install`
 
-This will install all necessary dependencies used in the project, including React.
+This will install all necessary dependencies used in the project, including React
 
 ### Run Game
 
@@ -44,6 +46,6 @@ To run the game in local development mode, run the following command in the term
 
 This should open the game in your web browser
 
-The game is also hosted and can be accessed via the link at the top of this README.
+The game is also hosted and can be accessed via the link at the top of this README
 
 Happy gaming!
