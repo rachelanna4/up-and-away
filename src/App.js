@@ -54,10 +54,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <div>
+      <div className="header">
         <Header />
       </div>
-      <div className="game-area">
+      <div className="game-area" id="start">
         <GameStatus
           className="GameStatus"
           word={word.word}

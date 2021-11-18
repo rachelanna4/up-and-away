@@ -34,6 +34,10 @@ body {
   line-height: 1.5em;
 }
 
+.play {
+  display: none;
+}
+
 .game-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,11 +49,15 @@ body {
 }
 
 .CategorySelector {
+  text-align: center;
   width: 40%;
+  min-width: 250px;
   margin: 40px auto 0;
   font-family: "Poppins", sans-serif;
   font-size: 0.9em;
   font-weight: 600;
+  border-radius: 5px;
+  color: black;
 }
 
 .WordDisplay h4 {
@@ -70,12 +78,14 @@ body {
 
 .ClueDisplay button {
   width: 30%;
+  min-width: 220px;
   margin: 20px auto 5px;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 0.9em;
   font-weight: 600;
   background-color: rgb(243, 171, 183);
+  color: black;
 }
 
 .ClueDisplay p {
@@ -99,10 +109,16 @@ body {
   margin: 3px 3px;
   border-radius: 50%;
   font-size: 1.2em;
+  color: black;
+  padding: 0;
 }
 
 .Keyboard button:hover {
   background-color: rgba(167, 224, 179, 0.911);
+}
+
+.Keyboard button:disabled {
+  opacity: 0.4;
 }
 
 .score-area {
@@ -127,4 +143,87 @@ body {
 
 span {
   color: rgb(243, 171, 183);
+}
+
+@media only screen and (max-width: 780px) {
+  .App {
+    display: inline;
+  }
+
+  .intro {
+    width: 90%;
+  }
+
+  .game-area {
+    display: inline;
+  }
+
+  .heading {
+    font-size: 3em;
+    letter-spacing: 3px;
+  }
+
+  .play {
+    display: inherit;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .play p {
+    font-family: "Whale", sans-serif;
+    font-size: 2em;
+    color: rgb(243, 171, 183);
+  }
+
+  .fa-angles-down {
+    height: 50px;
+    color: white;
+  }
+
+  .GameImage {
+    width: 150px;
+    margin: 5px;
+  }
+
+  .GameStatus {
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+  }
+
+  .CategorySelector {
+    margin-top: 5px;
+    width: 60%;
+    max-width: 200px;
+    font-size: 0.9em;
+  }
+
+  .WordDisplay h4 {
+    letter-spacing: 3px;
+    font-size: 1.4em;
+  }
+
+  .WordDisplay p {
+    margin-top: 10px;
+  }
+
+  .ClueDisplay button {
+    margin-top: 5px;
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .Keyboard {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .Keyboard button {
+    width: 35px;
+    height: 35px;
+    margin: 3px 3px;
+    border-radius: 50%;
+    font-size: 0.9em;
+  }
 }

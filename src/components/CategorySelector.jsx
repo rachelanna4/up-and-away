@@ -3,7 +3,7 @@ const CategorySelector = ({category, setCategory, restartGame}) => {
         <select name="category" className="CategorySelector" value={category} onChange={(event) => {
             restartGame(event.target.value);
         }}>
-            <option value="" disabled hidden>Choose a word category</option>
+            <option value="" disabled hidden>Choose a category</option>
             <option value="animals">Animals 🦊</option>
             <option value="countries">Countries 🌍 </option>
             <option value="nintendo">Nintendo Characters 🎮 </option>
